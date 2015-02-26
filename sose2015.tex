@@ -1,10 +1,11 @@
 \documentclass[conference]{IEEEtran}
 
 \usepackage[british]{babel}
-\usepackage{cite}
+\usepackage[noadjust]{cite}
 \usepackage{graphicx}
 \usepackage[hyphens]{url}
-\usepackage[pdftex]{hyperref}
+\usepackage{paralist}
+\usepackage[pdftex,colorlinks=true,hyperfootnotes=false]{hyperref}
 
 
 % correct bad hyphenation here
@@ -14,9 +15,7 @@
 \begin{document}
 %
 % paper title
-% can use linebreaks \\ within to get better formatting as desired
-\title{Need a new title!}
-%\title{The Smart Transport Hub: Smart Technologies in the UK's Future Urban Transport}
+\title{Smart Data-Harnessing for Financial Value in Short-Term Hire Electric Car Schemes}
 
 
 % author names and affiliations
@@ -55,11 +54,26 @@ Email: theo.tryfonas@bristol.ac.uk}}
 
 
 \begin{abstract}
-Abstract here...
+In the developed world, two distinct trends are emerging to shake-up
+the current dominance of privately-owned, combustion motor car
+transport. The first is the emergence of the electric powertrain for
+vehicles, and its emergence as an affordable and mass-marketed means
+of transport. This carries with it the potential to address many of
+the direct short-comings of the current paradigm -- air pollution, CO2
+emissions and noise pollution.
 
-% Index Terms fudge
-%\newline\newline
-\indent {\textbf{Keywords}}
+The second is the rise of hire models of car ownership -- the concept
+of paying for the use of a car as and when you need it. This carries
+with it the potential to address many of the systematic short comings
+of the current paradigm -- outlay-induced car use, residential parking
+and social division.  On a similar timescale, we are witnessing the
+rise of smart technologies and smart cities -- concepts that use data
+about the state of a system or elements of it to create value.
+
+There have been relatively few examples of schemes that have combined
+the electric and hire-model concepts, despite their benefits appear to
+dovetail beneficially. Indeed, the majority is against them on both
+counts -- cars are predominantly privately-owned and combustion.
 \end{abstract}
 
 % For peer review papers, you can put extra information on the cover
@@ -72,9 +86,10 @@ Abstract here...
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
 
-% \begin{IEEEkeywords}
-% Keywords
-% \end{IEEEkeywords}
+\begin{IEEEkeywords}
+Electric vehicles, smart technologies, smart cities, big data, energy,
+environment
+\end{IEEEkeywords}
 
 \section{Introduction}
 
@@ -91,7 +106,7 @@ electric cars; some have had such strategic investment in the concept
 as to release an entire electric car range, such as BMW's i
 Series. The direct environmental benefits of electric cars, summarised
 as lower particulate emissions, lower noise emissions and the
-potential for lower CO2 emissions, have reached the consencous of
+potential for lower CO2 emissions, have reached the consensus of
 being highly significant. Legislation in many countries is acting as a
 double-edged blade: penalising ICE users, and incentivising the
 purchase of EVs. Electric cars bring with them several caveats,
@@ -211,11 +226,11 @@ Political action is thus limited by a simple catch-22: public
 transport is the ideal, but impractical to reach saturation. Private
 transport is undesirable, but unavoidable, yet efforts to improve it
 also make it more prevalent. Mathematically, you might argue there is
-thus an optimum – a level of improvement of private transport that,
+thus an optimum -- a level of improvement of private transport that,
 when the reduction in public transport uptake is factored in, results
 in the lowest overall impact in the UK’s travel emissions. Whether or
 not this thought experiment is a fair simplification, there is a more
-logical and pragmatic answer – that transport strategy should be
+logical and pragmatic answer -- that transport strategy should be
 considered on a holistic level, and the interaction between private
 and public transport held as crucial. There are many more secondary
 effects that could also be considered from this first deduction; not
@@ -280,12 +295,12 @@ Smart technology is a new and rapidly growing concept. As such, a
 consensus of its exact definition has yet to be reached. However,
 interviewed academics~\cite{elecgen:2013}, industrial
 experts~\cite{buscher:2014} and a number of
-papers~\cite{komninos:2002,arup-et-al:2011,harrison+abbottdonnelly:2011,batty-et-al:2012} identify
-the fundamental, unifying theme as the use of data. The rise of
-interest in data-based possibilities for the built environment has
+papers~\cite{komninos:2002,arup-et-al:2011,harrison+abbottdonnelly:2011,batty-et-al:2012}
+identify the fundamental, unifying theme as the use of data. The rise
+of interest in data-based possibilities for the built environment has
 been fuelled by three key developments:
 
-\begin{enumerate}
+\begin{compactenum}
 \item {\textbf{The rapid increase in the production of data.}}
   Computer scientists have stated that many social trends, such as the
   rise internet connectivity, specifically mobile internet
@@ -310,7 +325,7 @@ been fuelled by three key developments:
   this vast data to be stored. Processing power is also much greater,
   allowing complex trends from data on scales so vast as a city to be
   processed and actioned fast enough to be considered `live'.
-\end{enumerate}
+\end{compactenum}
 
 Many such sources refer to data as a raw material, creating the notion
 that data can and should be used as an input to a business model that
@@ -323,16 +338,17 @@ in a factory, the journeys of cars across an urban centre, or the use
 of electricity residentially. The sheer volume of data available for
 such a large range of systems has led to the term `Big Data’, now
 commonly used to refer to a data stream large enough to make smart
-technologies feasible~\cite{hollands:2008,ibmsmartcities:2009,ciscoconcities:2010}.
+technologies
+feasible~\cite{hollands:2008,ibmsmartcities:2009,ciscoconcities:2010}.
 
 Smart technologies are usually defined as microsystems within these
 larger systems that carry out an action based on the collected
 data. Smart technologies are typically based on an existing action
-that, it is theorised, could be completed more effectively with the
-assistance of data~\cite{arup-et-al:2011}. More effectively can be
-interpreted as:
+that, it is theorised, could be completed more effectively -- as well
+as sustainably~\cite{cosgrave-et-al:2014} -- with the assistance of
+data~\cite{arup-et-al:2011}. More effectively can be interpreted as:
 
-\begin{itemize}
+\begin{compactitem}
 \item {\textbf{Faster:}} such as using traffic distribution to update
   signs in real time, rather than the extremely slow, reactive methods
   by which traffic is informally advised against taking certain
@@ -352,7 +368,7 @@ interpreted as:
   fault and piloting the robot manually. This can improve instances of
   both human error, hesitation and subjective judgment, for better or
   for worse. 
-\end{itemize}
+\end{compactitem}
 
 Smart cities are cities where smart technologies are taken a step
 further, and different city sub-systems such as waste disposal and
@@ -370,20 +386,12 @@ currently employed~\cite{tsoukalas:2008}.
 
 \subsection{Methodology}
 
-% We will now consider the role of smart technology within the future’s
-% transport strategy, specifically integrated private/public, electric
-% transport solutions, such as the Smart Transport Hub. For a range of
-% suggested concepts in existing literature covering smart technologies
-% of a number of different industries, we will consider the nature and
-% operation of each in the Smart Transport Hub context. The full list
-% can be seen in Figure 9***. The quantity of data produced, the primary
-% source of value in the data, and a valuation of that, mindful of basic
-% barriers, will be considered. While feasibility will be considered,
-% detailed technical design will be omitted.
-
-% *** insert table Fig 9 here ***
-
-Need new intro here...
+We will now consider the role of smart technology within the future’s
+transport strategy, specifically integrated private/public and
+electric transport solutions For a range of suggested concepts in
+existing literature covering smart technologies of a number of
+different industries, we will consider the nature and operation of
+each in the wider smart transport context.
 
 % The financial value data can bring is typically categorised into three
 % main types as shown in Figure~\ref{fig:datavaltechniques}:
@@ -560,7 +568,7 @@ hire smart pricing would include an additional influence based on the
 expected congestion of the roads at point of travel, attempting to
 deter travel that would exacerbate the congestion.  Ultimately, this
 requires the highest critical resolution of hire cars of all the smart
-technologies addressed here, by some margain, perhaps at least
+technologies addressed here, by some margin, perhaps at least
 25\%. Furthermore, many ethical dilemmas exist. If the resolution is
 lower than 50\%, it might be extremely unpopular that the most
 sustainable cars are essentially `taxed' into staying off the roads,
@@ -586,10 +594,10 @@ speed improvements, exclusively from the AM peak in Bristol.
 Similar to the understanding of how individuals operate electric cars,
 the National Grid are very interested in how individuals charge their
 EVs, as this will heavily influence how the grid develops in the next
-50 years.  Although typically our EV’s have predetermined charging
+50 years.  Although typically our EV's have predetermined charging
 patterns, EVs that are taken on multi-day rentals will most likely
 require charging of the hiree’s instigation. This provides a valid
-insight into the charging habits of EV users.  The value from this
+insight into the charging habits of EV users. The value from this
 system comes from the created market of vending charging habits to The
 National Grid.
 
@@ -611,7 +619,7 @@ problem for car hire management schemes in general. For example the
 following situations within a booking could threaten the ability to
 service later bookings:
 
-\begin{enumerate}
+\begin{compactenum}
 \item {\textbf{Inclement driving conditions:}} EVs are susceptible to
   have sizeable variation of energy use per mile depending on driving
   conditions. Cold weather can have negative effects on electric
@@ -629,9 +637,9 @@ service later bookings:
 \item {\textbf{Sat Nav:}} If an individual decides to take a longer
   route home, or even a route of the same duration of time but a
   greater use of charge (such as a longer motorway route compared to a
-  slower A-road route). Live Sat Nav Data can inform the booking
+  slower trunk route). Live sat nav data can inform the booking
   management system the minute the drive has this intention. 
-\end{enumerate}
+\end{compactenum}
 
 Pre-warning of any of these unforeseen circumstances can allow
 immediate shifting of the booking system to reflect increased hire
@@ -640,8 +648,37 @@ booking in a time when the car will now be driving/charging. The value
 from this system comes from improved reliability of the car hire
 service.
 
+\subsection{Barriers and Enablers}
 
-\section{Conclusion} 
+Each of these data streams and their associated benefits require
+capital and operational expenditure to put in place the infrastructure
+and staff that would facilitate the systems. Even without estimating
+this, it can be seen that a number of technologies are immediately
+unable to be financially viable, at least in isolation. Needless to
+say, this theoretical value is not instantly realisable. Considerable
+barriers exist to not only the creation of the value, but also the
+smart technologies themselves. At present legislation around
+renewables and EVs is under general scrutiny and review. Feed in
+tariffs (FITs) and other payouts for balancing services are
+complicated and have questionable longevity and there is little
+governmental impetus in the UK for smart pricing on a balancing
+level. Considerable psychological inertia also exists in some
+businesses as to the idea of data as a source of value.  The issue of
+critical resolution is also present --
+Figure~\ref{fig:bristolcardensity} demonstrates varying accuracy from
+predicting traffic levels at different sensor prevalence.
+
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/bristolcardensity.png}
+\caption{Matlab modelling of the accuracy of extrapolating to find
+  congestion from EV cars in Bristol, UK}
+\label{fig:bristolcardensity}
+\end{figure}
+
+
+\section{Conclusions} 
 
 \begin{figure}[!htp]
 \centering
@@ -650,6 +687,58 @@ service.
   single site vs. multisite implementations}
 \label{fig:sankey}
 \end{figure}
+
+It is clear there is great variation in the nature and quantity of
+value in smart technologies with short term EV hire. These can be seen
+graphically in Figure~\ref{fig:sankey}. As a general rule, there are
+three categories: 
+
+\begin{compactitem}
+\item Firstly, those that have the greatest benefit but are also the
+  most speculative, having the highest critical masses and requiring
+  the greatest stakeholder buy-in. However, their benefit is
+  extreme. These also have the highest quantity of non-financial
+  benefit, typically environmental, which is often equivalent to, or
+  in some cases higher than the economic and financial benefits. These
+  are typified by the smart pricing congestion control and the dynamic
+  traffic routing. Although there is little probability that this
+  group will be implemented in the near future, the sheer potential
+  cannot be ignored, and would serve well as a long term agenda for
+  local council, be it with implementation through the hub or
+  elsewhere.
+\item Secondly, a middle group, with moderate benefit whose
+  speculation is somewhat less, but typically relies on a small, niche
+  market for vending, and as such hinges significantly on this for any
+  value at all. Driving styles is a typical examples of this. While
+  there is some variation in the group -- spin off elements such as the
+  journey data, advertising approach fairs much better -- it is
+  difficult to label these as a quality. How UK law changes with respect
+  to data use, as well as how contract culture changes with respect to
+  data transactions will have a great influence. Many local
+  governments or devolved city regions, including Bristol, are
+  aspiring to wider open data initiatives, a
+  system where similar data sets are freely available (and reusable),
+  and the data is
+  realised through the new businesses that open as a result. This
+  stands, at least in some lights, in contrast to this category’s
+  technologies. 
+\item Thirdly, and bucking the trend, is a group with moderate
+  benefit, but whose speculation is low and requires only internal
+  participation. This third group, typified by the smart pricing and
+  car component monitoring, stand out as having the greatest
+  appeal. 
+\end{compactitem}
+
+Ultimately, there is considerable potential for smart technologies to
+transform not only the profitability of short term EV hire schemes,
+but the wider societal benefit of the concept. Which of the above
+segments are most appropriate to focus on will depend on the exact
+context and buy-in from external stakeholders. It is equally apparent,
+however, that the world has some considerable catching up to do --
+socio-culturally, legislatively and psychologically -- if any of these
+concepts are to be easily implemented, let alone the concept of the
+short-term EV and its benefits thriving across the globe.
+
 
 %\newpage
 
